@@ -38,7 +38,7 @@ posizioni = ['insegnante', 'bidello', 'studente']
 
 # struttura
 ```
-local_welcome/
+local_confirm/
 ├── amd/
 │   ├── src/
 │   │   └── modal.js
@@ -57,8 +57,8 @@ local_welcome/
 
 ```
 cd /var/www/moodle/local/
-git clone https://github.com/pieroproietti/moodle-local_welcome welcome
-ln -s /var/www/html/moodle/local/welcome $HOME/moodle-local_welcome 
+git clone https://github.com/pieroproietti/moodle-local_confirm confirm
+ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
 ```
 # Funzionamento
 
