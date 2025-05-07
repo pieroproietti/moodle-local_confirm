@@ -76,4 +76,4 @@ La finestra modale non può essere chiusa senza salvare le modifiche.
 JavaScript in Moodle is structured into ES2015 modules which are transpiled into the CommonJS format.
 
 * [javascript](https://moodledev.io/docs/5.0/guides/javascript)
-* [moodle-live-iso](https://github.com/pieroproietti/moodle-live-iso)
+* [moodle-live-iso](https://github.com/pieroproietti/moodle-iso-live)
