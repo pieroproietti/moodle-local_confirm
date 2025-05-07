@@ -1,0 +1,3 @@
+#!/bin/bash
+
+npm install --save-dev babelify @babel/core @babel/preset-env @babel/plugin-transform-arrow-functions @babel/plugin-transform-template-literals

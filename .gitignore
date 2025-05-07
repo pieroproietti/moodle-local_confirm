@@ -1,0 +1,33 @@
+# File build AMD generati
+amd/build/*
+
+# File di sistema e IDE
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# File di ambiente e configurazioni locali
+.env
+config.php
+
+# Cache e file temporanei
+*.tmp
+*.cache
+.settings/
+
+# Dipendenze Node
+node_modules/
+
+# Backup file
+*.bak
+*.backup
+
+# File di log
+*.log
+logs/
+
+# File generati da Moodle
+/lang/en/help/
+/lang/en/docs/

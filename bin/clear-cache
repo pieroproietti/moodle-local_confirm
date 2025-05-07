@@ -1,0 +1,2 @@
+MOODLE=/var/www/html/moodle
+php $MOODLE/admin/cli/purge_caches.php

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Configurazione
+MOODLE_ROOT="/var/www/html/moodle"
+PLUGIN_PATH="local/confirm"
+CURRENT_DIR=$(pwd)
+
+cd $MOODLE_ROOT
+rm $PLUGIN_PATH/amd/build/confirm*
+npx grunt amd --root=$PLUGIN_PATH --force
+cd $CURRENT_DIR
