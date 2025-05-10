@@ -7,12 +7,12 @@ import $ from 'jquery';
 
 export const init = async (user) => {
     const [welcome, confirm, modify, save, deptLabel, posLabel] = await Str.get_strings([
-        {key: 'welcome', component: 'local_confirm'},
-        {key: 'confirm', component: 'local_confirm'},
-        {key: 'modify', component: 'local_confirm'},
-        {key: 'save', component: 'local_confirm'},
-        {key: 'department', component: 'local_confirm'},
-        {key: 'position', component: 'local_confirm'}
+        { key: 'welcome', component: 'local_confirm' },
+        { key: 'confirm', component: 'local_confirm' },
+        { key: 'modify', component: 'local_confirm' },
+        { key: 'save', component: 'local_confirm' },
+        { key: 'department', component: 'local_confirm' },
+        { key: 'position', component: 'local_confirm' }
     ]);
 
     const departments = ['amministrazione', 'istruzione', 'altro'];
