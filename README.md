@@ -79,6 +79,8 @@ JavaScript in Moodle is structured into ES2015 modules which are transpiled into
 * [hooks](https://moodledev.io/docs/4.4/apis/core/hooks)
 
 # visual studio code extensions
-* [moodle-live-iso](https://github.com/pieroproietti/moodle-iso-live)
 * [PHP Tools for Visual Studio Code](https://www.devsense.com/en/features#vscode)
 * [moodle-pack](https://marketplace.visualstudio.com/items?itemName=imgildev.vscode-moodle-snippets)
+
+# moodle-live-iso
+* [moodle-live-iso](https://github.com/pieroproietti/moodle-iso-live)
