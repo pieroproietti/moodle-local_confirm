@@ -1,11 +1,14 @@
 <?php
+
 namespace local_confirm\hook;
 
 defined('MOODLE_INTERNAL') || die();
 
-class before_http_headers {
+class before_http_headers
+{
 
-    public static function execute($page): void {
+    public static function execute($page): void
+    {
         global $USER, $SESSION;
 
         if (!($page instanceof \moodle_page)) {

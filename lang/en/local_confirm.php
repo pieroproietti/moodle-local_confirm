@@ -1,4 +1,5 @@
 <?php
+
 $string['pluginname'] = 'Confirm modal';
 $string['welcome'] = 'Welcome';
 $string['confirm'] = 'Confirm';

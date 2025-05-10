@@ -3,8 +3,10 @@ namespace local_confirm;
 
 defined('MOODLE_INTERNAL') || die();
 
-class api {
-    public static function update_user($data) {
+class api
+{
+    public static function update_user($data)
+    {
         global $DB, $USER;
 
         require_sesskey();
@@ -13,7 +15,7 @@ class api {
             throw new \moodle_exception('invaliduser');
         }
 
-        $DB->update_record('user', (object)[
+        $DB->update_record('user', (object) [
             'id' => $USER->id,
             'department' => $data['department'],
             'institution' => $data['position'],
