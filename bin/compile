@@ -2,8 +2,9 @@
 
 # Configurazione
 CURRENT_DIR=$(pwd)
+PLUGIN_PATH=$MOODLE/local/confirm
 
-cd $MOODLE_ROOT
-rm $PLUGIN_PATH/amd/build/confirm*
-pnpx grunt amd --root=$PLUGIN_PATH --force
+cd $MOODLE
+rm -rf $PLUGIN_PATH/amd/build 
+pnpx grunt amd  --debug --root=local/confirm --force
 cd $CURRENT_DIR
