@@ -25,7 +25,7 @@
 defined('MOODLE_INTERNAL') || die();
 
 $plugin->component = 'local_confirmdep';
-$plugin->version = 2025051200;
+$plugin->version = 2025051201; # update to refresh
 $plugin->requires = 2020061500; // Moodle 5.0.0
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->release = '0.1';

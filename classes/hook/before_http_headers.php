@@ -4,8 +4,14 @@ namespace local_confirmdep\hook;
 
 defined('MOODLE_INTERNAL') || die();
 
-class before_http_headers
+final class before_http_headers
 {
+
+    public function __construct(
+        public readonly string $version,
+    ) {
+        debugging("confirmdep: $version", DEBUG_DEVELOPER);
+    }
 
     public static function execute($page): void
     {
