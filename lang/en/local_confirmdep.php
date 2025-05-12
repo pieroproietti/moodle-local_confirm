@@ -23,7 +23,7 @@
  */
 
 
-$string['pluginname'] = 'confirmdep modal';
+$string['pluginname'] = 'confirmdep';
 $string['welcome'] = 'Welcome';
 $string['confirmdep'] = 'confirmdep';
 $string['modify'] = 'Modify';
