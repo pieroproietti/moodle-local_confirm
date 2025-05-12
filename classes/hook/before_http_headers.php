@@ -1,6 +1,6 @@
 <?php
 
-namespace local_confirm\hook;
+namespace local_confirmdep\hook;
 
 defined('MOODLE_INTERNAL') || die();
 
@@ -16,7 +16,8 @@ class before_http_headers
             return;
         }
 
-        if (isloggedin() && !isguestuser() && !empty($SESSION->local_confirm_show_modal)) {
+        // if (isloggedin() && !isguestuser() && !empty($SESSION->local_confirmdep_show_modal)) {
+        if (isloggedin() && !empty($SESSION->local_confirmdep_show_modal)) {
             $userdata = [
                 'id' => $USER->id,
                 'username' => $USER->username,
@@ -25,9 +26,9 @@ class before_http_headers
                 'department' => $USER->department,
                 'position' => $USER->institution
             ];
-            $page->requires->js_call_amd('local_confirm/confirm', 'init', [$userdata]);
+            $page->requires->js_call_amd('local_confirmdep/confirmdep', 'init', [$userdata]);
 
-            unset($SESSION->local_confirm_show_modal);
+            unset($SESSION->local_confirmdep_show_modal);
             debugging('Modale caricata tramite hook before_http_headers', DEBUG_DEVELOPER);
         }
     }

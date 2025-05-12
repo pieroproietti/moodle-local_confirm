@@ -1,6 +1,6 @@
 # README
 
-Creare un plugin di tipo `local` denominato `local_confirm` per moodle 5.0.0 con una finestra modale 
+Creare un plugin di tipo `local` denominato `local_confirmdep` per moodle 5.0.0 con una finestra modale 
 che si apre al momento del login e DEVE essere accettato o modificato dall'utente prima di poter 
 proseguire.
 
@@ -25,7 +25,7 @@ posizioni = ['insegnante', 'bidello', 'studente']
 ```
 
 ```
-+------------------ confirm ------------------+
++------------------ confirmdep ------------------+
 | [username] [cognome] [nome]                 |
 | dipartimento _____________________________^ |
 | posizione    _____________________________^ |
@@ -34,11 +34,11 @@ posizioni = ['insegnante', 'bidello', 'studente']
 +---------------------------------------------+
 ```
 
-![](./img/local_confirm.png)
+![](./img/local_confirmdep.png)
 
 # struttura
 ```
-local_confirm/
+local_confirmdep/
 ├── amd/
 │   ├── src/
 │   │   └── modal.js
@@ -57,8 +57,8 @@ local_confirm/
 
 ```
 cd /var/www/moodle/local/
-git clone https://github.com/pieroproietti/moodle-local_confirm confirm
-ln -s /var/www/html/moodle/local/confirm $HOME/moodle-local_confirm
+git clone https://github.com/pieroproietti/moodle-local_confirmdep confirmdep
+ln -s /var/www/html/moodle/local/confirmdep $HOME/moodle-local_confirmdep
 ```
 # Funzionamento
 

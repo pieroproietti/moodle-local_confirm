@@ -15,17 +15,17 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for Confirm2
+ * Version information for confirmdep2
  *
- * @package    local_confirm
+ * @package    local_confirmdep
  * @copyright  2025 Piero Proietti <piero.proietti@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 
-$string['pluginname'] = 'Confirm modal';
+$string['pluginname'] = 'confirmdep modal';
 $string['welcome'] = 'Welcome';
-$string['confirm'] = 'Confirm';
+$string['confirmdep'] = 'confirmdep';
 $string['modify'] = 'Modify';
 $string['save'] = 'Save';
 $string['department'] = 'Department';

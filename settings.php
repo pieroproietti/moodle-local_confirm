@@ -15,9 +15,9 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for Confirm2
+ * Version information for confirmdep2
  *
- * @package    local_confirm
+ * @package    local_confirmdep
  * @copyright  2025 Piero Proietti <piero.proietti@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
@@ -25,19 +25,19 @@
 defined('MOODLE_INTERNAL') || die();
 
 if ($hassiteconfig) {
-    $settings = new admin_settingpage('local_confirm', get_string('pluginname', 'local_confirm'));
+    $settings = new admin_settingpage('local_confirmdep', get_string('pluginname', 'local_confirmdep'));
 
     $settings->add(new admin_setting_configtext(
-        'local_confirm/defaultdepartment',
-        get_string('defaultdepartment', 'local_confirm'),
-        get_string('defaultdepartment_desc', 'local_confirm'),
+        'local_confirmdep/defaultdepartment',
+        get_string('defaultdepartment', 'local_confirmdep'),
+        get_string('defaultdepartment_desc', 'local_confirmdep'),
         'istruzione'
     ));
 
     $settings->add(new admin_setting_configtext(
-        'local_confirm/defaultposition',
-        get_string('defaultposition', 'local_confirm'),
-        get_string('defaultposition_desc', 'local_confirm'),
+        'local_confirmdep/defaultposition',
+        get_string('defaultposition', 'local_confirmdep'),
+        get_string('defaultposition_desc', 'local_confirmdep'),
         'studente'
     ));
 

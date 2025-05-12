@@ -15,22 +15,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for Confirm2
+ * Version information for confirmdep2
  *
- * @package    local_confirm
+ * @package    local_confirmdep
  * @copyright  2025 Piero Proietti <piero.proietti@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-class local_confirm_observer
+class local_confirmdep_observer
 {
     public static function on_user_loggedin(\core\event\user_loggedin $event)
     {
         global $SESSION;
 
-        $SESSION->local_confirm_show_modal = true;
-        debugging('Modale flag impostato da local_confirm', DEBUG_DEVELOPER);
+        $SESSION->local_confirmdep_show_modal = true;
+        debugging('Modale flag impostato da local_confirmdep', DEBUG_DEVELOPER);
     }
 }

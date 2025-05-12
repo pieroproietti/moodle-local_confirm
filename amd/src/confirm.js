@@ -6,20 +6,20 @@ import * as Str from 'core/str';
 import $ from 'jquery';
 
 export const init = async (user) => {
-    const [welcome, confirm, modify, save, deptLabel, posLabel] = await Str.get_strings([
-        { key: 'welcome', component: 'local_confirm' },
-        { key: 'confirm', component: 'local_confirm' },
-        { key: 'modify', component: 'local_confirm' },
-        { key: 'save', component: 'local_confirm' },
-        { key: 'department', component: 'local_confirm' },
-        { key: 'position', component: 'local_confirm' }
+    const [welcome, confirmdep, modify, save, deptLabel, posLabel] = await Str.get_strings([
+        { key: 'welcome', component: 'local_confirmdep' },
+        { key: 'confirmdep', component: 'local_confirmdep' },
+        { key: 'modify', component: 'local_confirmdep' },
+        { key: 'save', component: 'local_confirmdep' },
+        { key: 'department', component: 'local_confirmdep' },
+        { key: 'position', component: 'local_confirmdep' }
     ]);
 
     const departments = ['amministrazione', 'istruzione', 'altro'];
     const positions = ['insegnante', 'bidello', 'studente'];
 
     const content = `
-        <div class="local-confirm-modal">
+        <div class="local-confirmdep-modal">
             <p><strong>${user.username}</strong> - ${user.firstname} ${user.lastname}</p>
             <div class="form-group">
                 <label for="department-select">${deptLabel}</label>
@@ -44,7 +44,7 @@ export const init = async (user) => {
             large: true,
             buttons: {
                 save,
-                cancel: confirm
+                cancel: confirmdep
             }
         });
 
@@ -54,7 +54,7 @@ export const init = async (user) => {
 
             try {
                 await Ajax.call([{
-                    methodname: 'local_confirm_update_user',
+                    methodname: 'local_confirmdep_update_user',
                     args: {
                         userid: user.id,
                         department,
@@ -69,13 +69,13 @@ export const init = async (user) => {
         });
 
         modal.getRoot().on(ModalEvents.hidden, (e) => {
-            if (!window.localStorage.getItem('local_confirm_confirmed')) {
+            if (!window.localStorage.getItem('local_confirmdep_confirmdeped')) {
                 modal.show();
             }
         });
 
         modal.getRoot().on(ModalEvents.cancel, () => {
-            window.localStorage.setItem('local_confirm_confirmed', '1');
+            window.localStorage.setItem('local_confirmdep_confirmdeped', '1');
             modal.hide();
         });
 

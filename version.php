@@ -15,22 +15,22 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for Confirm2
+ * Version information for confirmdep2
  *
- * @package    local_confirm
+ * @package    local_confirmdep
  * @copyright  2025 Piero Proietti <piero.proietti@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
 defined('MOODLE_INTERNAL') || die();
 
-$plugin->component = 'local_confirm';
+$plugin->component = 'local_confirmdep';
 $plugin->version = 2025050900;
 $plugin->requires = 2020061500; // Moodle 5.0.0
 $plugin->maturity = MATURITY_ALPHA;
 $plugin->release = '0.1';
 
 $plugin->hooks = [
-    'core\hook\output\before_http_headers' => '\local_confirm\hook\BeforeHttpHeaders::execute',
+    'core\hook\output\before_http_headers' => '\local_confirmdep\hook\BeforeHttpHeaders::execute',
 ];
 

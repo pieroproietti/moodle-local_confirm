@@ -15,14 +15,14 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Version information for Confirm2
+ * Version information for confirmdep2
  *
- * @package    local_confirm
+ * @package    local_confirmdep
  * @copyright  2025 Piero Proietti <piero.proietti@gmail.com>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-namespace local_confirm;
+namespace local_confirmdep;
 
 defined('MOODLE_INTERNAL') || die();
 
