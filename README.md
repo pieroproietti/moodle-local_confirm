@@ -25,7 +25,7 @@ posizioni = ['insegnante', 'bidello', 'studente']
 ```
 
 ```
-+------------------ confirmdep ------------------+
++---------------- confirmdep -----------------+
 | [username] [cognome] [nome]                 |
 | dipartimento _____________________________^ |
 | posizione    _____________________________^ |
